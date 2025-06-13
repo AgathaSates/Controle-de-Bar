@@ -8,7 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Content Remove="wwwroot\imagens\banner-tela-1.webp" />
+    <Content Remove="wwwroot\imagens\banner-tela-2.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Controle-de-Bar.Dominio\Controle-de-Bar.Dominio.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,38 @@
+﻿:root {
+    --fundo: #CCC9DC;
+    --navbar: #0C1821;
+    --card: #324A5F;
+    --texto: #1B2A41;
+    --navbar-texto: #D8DCFF;
+}
+
+body {
+    background-color: var(--fundo);
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
+
+.minhanavbar {
+    background-color: var(--navbar);
+}
+
+    .minhanavbar a {
+        color: var(--navbar-texto);
+    }
+
+    .minhanavbar .nav-link:hover {
+        background-color: var(--fundo);
+        color: var(--navbar);
+        border-radius: 15px;
+    }

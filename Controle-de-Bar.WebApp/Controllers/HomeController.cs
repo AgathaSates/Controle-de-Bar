@@ -5,6 +5,7 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
+        ViewBag.BannerUrl = Url.Content("~/imagens/banner-1.png");
         return View();
     }
 }

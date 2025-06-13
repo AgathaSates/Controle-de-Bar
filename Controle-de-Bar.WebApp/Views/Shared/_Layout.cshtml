@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>@ViewBag.Title</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link href="~/styles.css" rel="stylesheet" />
+
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg minhanavbar animate__animated animate__slideInDown">
+		<div class="container">
+
+			<a class="navbar-brand" href="#">
+				<img src="~/imagens/logo.png" alt="Logo AS" style="max-height: 40px">
+			</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-end fs-5" id="navbarNav">
+				<ul class="navbar-nav gap-3">
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fas fa-home me-2"></i> Início
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fas fa-chair me-2"></i> Mesas
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fas fa-user-tie me-2"></i> Garçons
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fas fa-champagne-glasses me-2"></i> Produtos
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fas fa-cash-register me-2"></i> Contas
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="animate__animated animate__zoomIn" style="background-color: #151d29;">
+		<header class="container d-block mx-auto">
+			<img src="@ViewBag.BannerUrl" alt="Banner da Página" class="img-fluid" />
+		</header>
+	</div>
+
+	<main class="container my-5">
+		@RenderBody()
+	</main>
+
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+		AOS.init({
+		  duration: 800,
+		  once: false
+		});
+	</script>
+</body>
+</html>
