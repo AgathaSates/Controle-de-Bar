@@ -1,0 +1,46 @@
+﻿@model EditarProdutoViewModel
+
+@{
+    ViewBag.Titulo = "Edição de Produto";
+}
+
+<h1 class="texto text-center"> Edição de Produto</h1>
+
+<div class="row justify-content-center my-5">
+    <div class="col-md-8">
+        <div class="card border-0">
+            <div class="card-body p-md-5 fundo-card">
+                <form asp-action="Editar" asp-route-id="@Model.Id">
+                    <h3>Formulário de Edição</h3>
+
+                    @if (ViewData.ModelState["CadastroUnico"]?.Errors.Count > 0)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show my-3" role="alert">
+                            @ViewData.ModelState["CadastroUnico"]!.Errors.First().ErrorMessage
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    <div class="form-group d-grid gap-2 mt-3">
+                        <label asp-for="Nome" class="control-label fs-5">Nome:</label>
+                        <input asp-for="Nome" class="form-control meu-input" />
+                        <span asp-validation-for="Nome" class="text-danger"></span>
+                    </div>
+                    <div class="form-group d-grid gap-2 mt-3">
+                        <label asp-for="Preco" class="control-label fs-5">Valor:</label>
+                        <input asp-for="Preco" type="number" min="0" step="0.01" pattern="^\d+(?:\,\d{1,2})?$" class="form-control meu-input" />
+                        <span asp-validation-for="Preco" class="text-danger"></span>
+                    </div>
+                    <div class="form-group d-flex align-items-center justify-content-end gap-3 mt-5">
+                        <a href="/produtos" class="texto-card">Voltar para a listagem</a>
+                        <button type="submit" class="btn btn-success rounded-3 px-5">Confirmar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

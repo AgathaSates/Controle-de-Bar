@@ -2,9 +2,9 @@
 using Controle_de_Bar.Infraestrutura.Arquivos.Compartilhado;
 
 namespace Controle_de_Bar.Infraestrutura.Arquivos.ModuloMesa;
-public class RepositorioMesaEmArquivo : RepositorioBaseEmArquivo<Mesa>, IRepositorioMesa
+public class RepositorioMesa : RepositorioBaseEmArquivo<Mesa>, IRepositorioMesa
 {
-    public RepositorioMesaEmArquivo(ContextoDados contexto) : base(contexto) { }
+    public RepositorioMesa(ContextoDados contexto) : base(contexto) { }
 
     protected override List<Mesa> ObterRegistros()
     {

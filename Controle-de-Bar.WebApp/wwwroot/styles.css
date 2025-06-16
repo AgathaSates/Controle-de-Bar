@@ -1,7 +1,8 @@
 ﻿:root {
     --fundo: #CCC9DC;
     --navbar: #0C1821;
-    --card: #324A5F;
+    --card: #1B2A41;
+    --card-texto: #CCC9DC;
     --texto: #1B2A41;
     --navbar-texto: #D8DCFF;
 }
@@ -12,7 +13,7 @@ body {
 }
 
 h1 {
-    font-weight: 700;
+    font-weight: 900;
 }
 
 h2 {
@@ -20,7 +21,7 @@ h2 {
 }
 
 p {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .minhanavbar {
@@ -36,3 +37,45 @@ p {
         color: var(--navbar);
         border-radius: 15px;
     }
+
+.texto {
+    color: var(--texto);
+}
+
+.texto-card {
+    color: var(--card-texto);
+}
+
+.header {
+    background-color: #151d29;
+    height: 100vh;
+}
+
+.fundo-card {
+    background-color: var(--card);
+    color: var(--card-texto);
+}
+.opcao-card {
+    max-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meu-input {
+    background-color: var(--fundo);
+    color: black;
+}
+
+    .meu-input:focus {
+        background-color: var(--fundo);       
+        box-shadow: var(--navbar);
+        border: 3px solid var(--navbar);
+    }
+
+
+    @media (max-width: 500px) {
+        .header {
+        height: 40vh;
+    }
+}

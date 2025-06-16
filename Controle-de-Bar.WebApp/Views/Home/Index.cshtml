@@ -1,3 +1,84 @@
-﻿<div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-	<h1>TESTE</h1>
+﻿@{
+	ViewBag.Title= "Página Inicial";
+}
+
+<div>
+    <div class="text-center texto" data-aos="zoom-in">
+		<h1>Bem-Vindo ao Bar Oblivion!</h1>
+        <p class="fs-4 mt-3">
+            A sua melhor escolha em bares!
+        </p>
+
+	</div>
+    <div class="container my-4">
+
+        <div class="card mb-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row g-0 h-100">
+                <div class="col-md-4 fundo-card">
+                    <img src="~/imagens/mesas.png" class="img-fluid h-100" style="object-fit: cover;" alt="Imagem 1">
+                </div>
+                <div class="col-md-8 fundo-card">
+                    <div class="card-body">
+                        <h1 class="card-title">Controle de Mesas</h1>
+                        <h5 class="card-text my-5">Realize o gerenciamento completo das mesas com funções de cadastro, consulta, edição e exclusão. Mantenha o controle do seu salão de forma simples e eficiente.</h5>
+                        <div>
+                            <a class="btn btn-dark btn-lg texto-card" href="/mesas">Ir para Mesas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row g-0 h-100">
+                <div class="col-md-4 fundo-card">
+                    <img src="~/imagens/garcom.png" class="img-fluid h-100" style="object-fit: cover;" alt="Imagem 1">
+                </div>
+                <div class="col-md-8 fundo-card">
+                    <div class="card-body">
+                        <h1 class="card-title">Controle de Garçons</h1>
+                        <h5 class="card-text my-5">Gerencie os garçons da casa com funções de cadastro, consulta, edição e exclusão. Mantenha os dados sempre atualizados.</h5>
+                        <div>
+                            <a class="btn btn-dark btn-lg texto-card" href="/garcons">Ir para Garçons</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row g-0 h-100">
+                <div class="col-md-4 fundo-card">
+                    <img src="~/imagens/produtos.png" class="img-fluid h-100" style="object-fit: cover;" alt="Imagem 1">
+                </div>
+                <div class="col-md-8 fundo-card">
+                    <div class="card-body">
+                        <h1 class="card-title">Controle de Produtos</h1>
+                        <h5 class="card-text my-5">Controle o cardápio do restaurante de forma simples: crie, visualize, edite e exclua produtos sempre que precisar.</h5>
+                        <div>
+                            <a class="btn btn-dark btn-lg texto-card" href="/produtos">Ir para Produtos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row g-0 h-100">
+                <div class="col-md-4 fundo-card">
+                    <img src="~/imagens/contas.png" class="img-fluid h-100" style="object-fit: cover;" alt="Imagem 1">
+                </div>
+                <div class="col-md-8 fundo-card">
+                    <div class="card-body">
+                        <h1 class="card-title">Controle de Contas</h1>
+                        <h5 class="card-text my-5">Gerencie as contas abertas no salão com funções de criação, consulta, atualização e exclusão. Controle os pedidos e acompanhe o fechamento de cada conta.</h5>
+                        <div>
+                            <a class="btn btn-dark btn-lg texto-card" href="/contas">Ir para Contas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>

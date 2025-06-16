@@ -14,6 +14,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Controle-de-Bar.Dominio\Controle-de-Bar.Dominio.csproj" />
+    <ProjectReference Include="..\Controle-de-Bar.Infraestrutura.Arquivos\Controle-de-Bar.Infraestrutura.Arquivos.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Conta\" />
   </ItemGroup>
 
 </Project>
